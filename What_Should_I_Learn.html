@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What Should I Learn</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<script src="Source/JS/alljs.js"></script>
+	<link rel="stylesheet" type="text/css" href="Source/CSS/style.css">
+	<script src="https://kit.fontawesome.com/b1f8454596.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="header">
+    <!-- Navbar nickel -->
+	    <h1 >Best Site Ever</h1>
+
+	    <div class="Navbar__Link-toggle">
+	      <i class="fas fa-bars fa-3x" onclick="classToggle()"></i>
+	    </div>
+
+	    <ul class="nav">
+	      <li class="Navbar__Items"><a href="index.html">Home</a></li>
+	      <li class="Navbar__Items"><a href="About_me.html">About Me</a></li>
+	      <li class="Navbar__Items"><a href="What_I_Learn.html">What I Learn</a></li>
+	      <li class="Navbar__Items"><a href="What_Should_I_Learn.html">What Should I Learn</a></li>
+	    </ul>
+
+	</div>
+	<div class="full-width">
+		<div class="Icon">
+			<i class="fas fa-plus fa-2x" id="devtools" onclick="CardToggle(this.id)"></i>
+		</div>
+		<h2>Dev Tools</h2>
+		<h2></h2>
+	</div>
+
+	<div class="invisible" id="card-devtools">
+		    <div class="item">
+			  	<i class="fa fa-bitbucket fa-6x"></i>
+			  	<h3>BitBucket</h3>
+			  	<div class="noshow" id="info-bitbucket">
+			  		<a href="https://confluence.atlassian.com/confeval/development-tools-evaluator-resources/bitbucket/bitbucket-what-is-bitbucket" class="link" target="_blank"><strong>What is BitBucket</strong></a>
+			  		<a href="https://www.atlassian.com/fr/git/tutorials/learn-git-with-bitbucket-cloud" class="link" target="_blank"><strong>Tutorial</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="bitbucket" onclick="InfoToggle(this.id)"></i>
+		    </div>
+		  	<div class="item">
+			  	<i class="fa fa-github fa-6x"></i>
+			  	<h3>GitHub</h3>
+			    <div class="noshow" id="info-GitHub">
+			  		<a href="https://digital.gov/resources/an-introduction-github/" class="link" target="_blank"><strong>What is GitHub</strong></a>
+			  		<a href="https://www.youtube.com/watch?v=9GKpbI1siow&list=PLpcSpRrAaOarEpNz71TSfNVd0eQmsZSgN" class="link" target="_blank"><strong>Tutorial</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="GitHub" onclick="InfoToggle(this.id)"></i>
+		  	</div>
+		  	<div class="item">
+			  	<i class="fab fa-jira fa-6x"></i>
+			  	<h3>Jira</h3>
+			    <div class="noshow" id="info-jira">
+			  		<a href="https://www.atlassian.com//software/jira/guides/use-cases/what-is-jira-used-for#" class="link" target="_blank"><strong>What is Jira</strong></a>
+			  		<a href="https://www.atlassian.com/software/jira/guides/developers/basics?tab=kanban#step-one" class="link" target="_blank"><strong>Tutorial</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="jira" onclick="InfoToggle(this.id)"></i>
+			</div>
+		    <div class="item">
+			  	<i class="fab fa-docker fa-6x"></i>
+			  	<h3>Docker</h3>
+			    <div class="noshow" id="info-Docker">
+			    	<a href="https://www.redhat.com/en/topics/containers/what-is-docker" class="link" target="_blank"><strong>What is Docker</strong></a>
+			  		<a href="https://dyma.fr/docker?gclid=CjwKCAjwkvWKBhB4EiwA-GHjFl15HEYUFGixbOTZB2YH7XxSzOFBYCTpId77jl3fXWxnzkC9CMIAQBoCLfEQAvD_BwE" class="link" target="_blank"><strong>Tutorial</strong></a>
+
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="Docker" onclick="InfoToggle(this.id)"></i>
+		    </div>
+		    <div class="item">
+			    <i class="fa fa-cloud fa-6x"></i>
+			    <h3>SonarCloud</h3>
+			    <div class="noshow" id="info-SonarCloud">
+			  		<a href="https://sonarcloud.io/" class="link" target="_blank"><strong>What is SonarCloud</strong></a>
+			  		<a href="https://asus-aics.github.io/DeveloperGuide/pages/020_sonar_cloud/" class="link" target="_blank"><strong>Tutorial</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="SonarCloud" onclick="InfoToggle(this.id)"></i>
+		    </div>
+	</div>
+
+	<div class="full-width">
+		<div class="Icon">
+			<i class="fas fa-plus fa-2x" id="language" onclick="CardToggle(this.id)"></i>
+		</div>
+		<h2>Languages</h2>
+		<h2></h2>
+	</div>
+
+		<div class="invisible" id="card-language">
+		  	<div class="item">
+		  		<i class="fab fa-java fa-6x"></i>
+			  	<h3>Java</h3>
+			    <div class="noshow" id="info-java">
+			  		<a href="https://www.java.com/en/download/help/whatis_java.html" class="link" target="_blank"><strong>What is Java</strong></a>
+			  		<a href="https://www.tutorialspoint.com/eclipse/eclipse_create_java_project.htm" class="link" target="_blank"><strong>How to set up</strong></a>
+			  		<a href="https://asus-aics.github.io/DeveloperGuide/pages/020_sonar_cloud/" class="link" target="_blank"><strong>Music player project</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="java" onclick="InfoToggle(this.id)"></i>
+		    </div>
+		  	<div class="item">
+		  		<i class="fab fa-python fa-6x"></i>
+			  	<h3>Python</h3>
+			    <div class="noshow" id="info-Python">
+			  		<a href="https://techvidvan.com/tutorials/python-advantages-and-disadvantages/" class="link" target="_blank"><strong>What is Python</strong></a>
+			  		<a href="https://www.jetbrains.com/help/pycharm/creating-and-running-your-first-python-project.html" class="link" target="_blank"><strong>How to set up</strong></a>
+			  		<a href="https://asus-aics.github.io/DeveloperGuide/pages/020_sonar_cloud/" class="link" target="_blank"><strong>IA Project</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="Python" onclick="InfoToggle(this.id)"></i>
+		    </div>
+		    <div class="item">
+		    	<i class="fab fa-js-square fa-6x"></i>
+			  	<h3>JavaScript</h3>
+			    <div class="noshow" id="info-JavaScript">
+			  		<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" class="link" target="_blank"><strong>What is JavaScript</strong></a>
+			  		<a href="https://www.freecodecamp.org/news/javascript-projects-for-beginners/" class="link" target="_blank"><strong>Project</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="JavaScript" onclick="InfoToggle(this.id)"></i>
+		    </div>
+		  	<div class="item">
+		  		<i class="fab fa-rust fa-6x"></i>
+			  	<h3>Rust</h3>
+			    <div class="noshow" id="info-Rust">
+			  		<a href="https://www.rust-lang.org/" class="link" target="_blank"><strong>What is Rust</strong></a>
+			  		<a href="https://asus-aics.github.io/DeveloperGuide/pages/020_sonar_cloud/" class="link" target="_blank"><strong>How to set up</strong></a>
+			  		<a href="https://serokell.io/blog/learn-rust" class="link" target="_blank"><strong>Project</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="Rust" onclick="InfoToggle(this.id)"></i>
+		    </div>
+		    <div class="item">
+		    	<img width="79" height="96" src="https://static-00.iconduck.com/assets.00/c-icon-455x512-nnvx09v8.png">
+			  	<h3>C#</h3>
+			    <div class="noshow" id="info-csharp">
+			  		<a href="https://www.techrepublic.com/article/why-you-should-move-to-c/#:~:text=C%23%20takes%20advantage%20of%20the,type%20for%20performing%20financial%20calculations.&text=C%23%20is%20type%2Dsafe%2C%20which%20means%20several%20things." class="link" target="_blank"><strong>What is C#</strong></a>
+			  		<a href="https://blog.udemy.com/c-sharp-projects/" class="link" target="_blank"><strong>Project</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="csharp" onclick="InfoToggle(this.id)"></i>
+		    </div>
+		    <div class="item">
+		    	<img width="79" height="96" src="https://brandslogos.com/wp-content/uploads/images/large/c-logo-black-and-white.png">
+			  	<h3>C++</h3>
+			    <div class="noshow" id="info-cplusplus">
+			  		<a href="https://www.programiz.com/cpp-programming" class="link" target="_blank"><strong>Learn C++</strong></a>
+			    </div>
+			    <i class="fas fa-caret-down fa-2x" id="cplusplus" onclick="InfoToggle(this.id)"></i>
+		    </div>
+
+		</div>
+
+</body>
+</html>

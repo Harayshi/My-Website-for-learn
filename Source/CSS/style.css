@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+
+}
+
+/*-----------------------------------------------HEADER ------------------------------------------------------------*/
+
+.header {
+  z-index: 999;
+  padding: 0 45px;
+  background-color: #283593;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0px;
+  left: 0px;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+.nav a{
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+
+.nav a:hover{
+  color: #c5cae9;
+  transform: rotate(6deg);
+}
+
+.nav{
+  list-style:none;
+  display: flex;
+}
+
+.nav li{
+  margin-left: 25px;
+}
+
+
+@media (max-width: 1000px){
+    .header{
+        /* Reverse the axis of the header, making it vertical. */
+        flex-direction: column;
+        /* Align items to the begining (the left) of the header. */
+        align-items: flex-start;
+    }
+
+    .header h1{
+      font-size: 3em;
+    }
+
+    .nav a{
+      font-size: 2em;
+    }
+
+    .show-class{
+      display: block;
+    }
+
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+        margin:45px 0;
+    }
+
+    .nav{
+      flex-direction: column;
+    }
+
+    .Navbar__Items{
+      display:none;
+    }
+}
+
+/*-----------------------------------------------PAGE D'ACCEUIL-----------------------------------------------*/
+
+.hero{
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  background-color: #c5cae9;
+  padding: 60px 45px;
+  display: grid;
+  justify-content: center;
+}
+
+.hero-inner{
+  max-width: 1000px;
+  text-align: center;
+  margin:auto;
+}
+
+.hero h1{
+  font-weight: normal;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero p{
+  font-size:1.30rem;
+  line-height: 1.6;
+}
+
+.hero li{
+  font-size:1.30rem;
+  line-height: 1.6;
+}
+
+.buttonlearn{
+  background-color: #3949ab;
+  color:#FFF;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-block;
+   transition: all 0.2s ease-out;
+  margin-left: 40px;
+
+}
+
+.hero a:hover {
+  transform: rotate(6deg);
+}
+
+/*--------------------------------------------------- CARD -------------------------------------------------------*/
+
+
+.parent{
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.parent h3{
+  font-size: 2.0em;
+}
+
+.link {
+  padding: 0 2px;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #283593;
+}
+
+.link:hover,
+.link:focus {
+  color: darkblue;
+}
+
+.noshow{
+  display: none;
+}
+
+.show{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.invisible{
+  display: none;
+}
+
+.fa-caret-down{
+  position: relative;
+  animation: myfirst 2s infinite;
+  cursor: pointer;
+}
+
+.fa-caret-up{
+  position: relative;
+  animation: myfirst 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes myfirst {
+  0%   { left: 0px; top: 0px;}
+  50%  {left: 0px; top: 10px;}
+  100% {left: 0px; top: 0px;}
+}
+
+
+.item{
+  background-color: rgb(228,228,228);
+  padding: 20px;
+  margin: 7%;
+  font-size: 1rem;
+  line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*----------------------------------------------------TITLE--------------------------------------------------*/
+
+
+
+.Icon {
+    display: flex;
+    cursor: pointer;
+}
+
+.full-width h2{
+  font-size: 2.00em;
+}
+
+.full-width{
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  grid-template-columns: minmax(auto, 900px);
+  background-color: #c5cae9;
+  margin: auto;
+  text-align: center;
+}
